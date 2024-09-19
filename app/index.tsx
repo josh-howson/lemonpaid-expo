@@ -72,7 +72,7 @@ export default function Homepage({ navigation }) {
         <Text style={styleTypography.body}>Earning a living is noble and exciting. Encourage positive thoughts about your working lifestyle with daily creative reminders about how much money you’re making.</Text>
 
         <Button
-          onPress={() => navigation.replace('OneStepAtATime')}
+          onPress={() => navigation.navigate('OneStepAtATime')}
           label="Continue"
         />
       </View>

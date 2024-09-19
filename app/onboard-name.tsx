@@ -31,7 +31,7 @@ export default function OnboardNamePage({ navigation }) {
         />
 
         <Button
-          onPress={() => navigation.replace('OnboardSalaryPage')}
+          onPress={() => navigation.navigate('OnboardSalaryPage')}
           label="Continue"
         />
       </View>

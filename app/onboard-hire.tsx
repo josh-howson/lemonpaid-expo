@@ -31,7 +31,7 @@ export default function OnboardHirePage({ navigation }) {
         />
 
         <Button
-          onPress={() => navigation.replace('Homepage')}
+          onPress={() => navigation.navigate('Homepage')}
           label="Continue"
         />
 
@@ -42,7 +42,7 @@ export default function OnboardHirePage({ navigation }) {
             style={{
             marginHorizontal: 'auto',
           }}
-          onPress={() => navigation.replace('OnboardHirePage')}
+          onPress={() => navigation.navigate('OnboardHirePage')}
           >
             <Text style={{
               color: "#122A47",

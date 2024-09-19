@@ -46,7 +46,7 @@ export default function OneStepAtATimePage({ navigation }) {
         <Text style={styleTypography.body}>Tell us a little bit about yourself and your salary, and then choose how you’d like to receive reminders.</Text>
 
         <Button
-          onPress={() => navigation.replace('OnboardNamePage')}
+          onPress={() => navigation.navigate('OnboardNamePage')}
           label="Continue"
         />
       </View>
