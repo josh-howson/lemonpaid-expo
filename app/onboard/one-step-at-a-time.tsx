@@ -1,8 +1,8 @@
 import { Text, View, Image, SafeAreaView } from 'react-native';
 import * as Notifications from 'expo-notifications';
-import { styleTypography } from '../styles/typography';
-import Button from '../components/Button';
-import { colors } from '../styles/color';
+import { styleTypography } from '../../styles/typography';
+import Button from '../../components/Button';
+import { colors } from '../../styles/color';
 
 export default function OneStepAtATimePage({ navigation }) {
   const sendNotification = () => {
@@ -28,7 +28,7 @@ export default function OneStepAtATimePage({ navigation }) {
       height: '100%',
     }}>
     <Image
-      source={require('../assets/images/onboard-2.png')}
+      source={require('@assets/images/onboard-2.png')}
       style={{
         width: '100%',
         maxWidth: '100%',
@@ -45,10 +45,14 @@ export default function OneStepAtATimePage({ navigation }) {
 
         <Text style={styleTypography.body}>Tell us a little bit about yourself and your salary, and then choose how you’d like to receive reminders.</Text>
 
-        <Button
-          onPress={() => navigation.navigate('OnboardNamePage')}
-          label="Continue"
-        />
+        <View style={{
+          marginTop: 'auto'
+        }}>
+          <Button
+            onPress={() => navigation.navigate('OnboardNamePage')}
+            label="Continue"
+          />
+        </View>
       </View>
     </SafeAreaView>
   </View>;

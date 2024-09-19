@@ -7,11 +7,22 @@ export const styleButton = StyleSheet.create({
     fontWeight: '600',
     fontSize: 14,
   },
+  textDisabled: {
+    color: '#ddd',
+    textAlign: 'center',
+    fontWeight: '600',
+    fontSize: 14,
+  },
   pressable: {
     backgroundColor: '#122A47',
     borderRadius: 999,
     paddingHorizontal: 24,
     paddingVertical: 10,
-    marginTop: 'auto',
+  },
+  pressableDisabled: {
+    backgroundColor: '#ccc',
+    borderRadius: 999,
+    paddingHorizontal: 24,
+    paddingVertical: 10,
   },
 });
